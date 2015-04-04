@@ -125,4 +125,7 @@
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logoBig.png" />
+  </ItemGroup>
 </Project>
