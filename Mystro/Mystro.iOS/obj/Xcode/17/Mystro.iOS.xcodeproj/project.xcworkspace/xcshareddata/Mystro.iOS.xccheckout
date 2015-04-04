@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6850E880-4FA7-4C56-819E-D335BBA55569</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mystro.iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>705D97D8C7163929B6F5614C48429EC905CFD031</key>
+		<string>https://github.com/LAHacks-Tritons/Mystro.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mystro/Mystro.iOS/obj/Xcode/17/Mystro.iOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>705D97D8C7163929B6F5614C48429EC905CFD031</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/LAHacks-Tritons/Mystro.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>705D97D8C7163929B6F5614C48429EC905CFD031</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>705D97D8C7163929B6F5614C48429EC905CFD031</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mystro</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using Xamarin.Themes;
+using Xamarin.Themes.Core;
+using Xamarin.Themes.TrackBeam;
 
 using Foundation;
 using UIKit;
@@ -41,6 +44,12 @@ namespace Mystro.iOS
 		// This method is called when the application is about to terminate. Save data, if needed.
 		public override void WillTerminate (UIApplication application)
 		{
+		}
+
+		public override void FinishedLaunching (UIApplication application)
+		{
+			ThemeManager.Register<TrackBeamTheme>().Apply();
+
 		}
 	}
 }

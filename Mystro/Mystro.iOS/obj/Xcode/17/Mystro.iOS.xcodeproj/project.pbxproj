@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13585B9A0000000000000000 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E968380000000000000000 /* LaunchScreen.xib */; };
+		1831C8400000000000000000 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514292200000000000000000 /* MainStoryboard.storyboard */; };
+		1CDA2ECC0000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B3B6A0000000000000000 /* AppDelegate.m */; };
+		24620E400000000000000000 /* LogoMystro.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F31ADE0000000000000000 /* LogoMystro.png */; };
+		24F0B3640000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2881C0020000000000000000 /* MapKit.framework */; };
+		26F4AB520000000000000000 /* RegisterViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 2A85B7F00000000000000000 /* RegisterViewController.h */; };
+		27278E6E0000000000000000 /* Mystro_iOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB89B0C0000000000000000 /* Mystro_iOSViewController.m */; };
+		2A1FF1B80000000000000000 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0FE560000000000000000 /* LogInViewController.m */; };
+		2D8EFE450000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31200AE30000000000000000 /* CoreGraphics.framework */; };
+		2EE250FE0000000000000000 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32735D9C0000000000000000 /* background.jpg */; };
+		2FADDD6E0000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 333EEA0C0000000000000000 /* Info.plist */; };
+		312A0F130000000000000000 /* logoBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 34BB1BB10000000000000000 /* logoBig.png */; };
+		3174EE100000000000000000 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3505FAAE0000000000000000 /* RegisterViewController.m */; };
+		332402D10000000000000000 /* LogInViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 36B50F6F0000000000000000 /* LogInViewController.h */; };
+		33BCAC250000000000000000 /* Mystro_iOSViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 374DB8C30000000000000000 /* Mystro_iOSViewController.h */; };
+		3422725D0000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 37B37EFB0000000000000000 /* AppDelegate.h */; };
+		35B103100000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC1CCF00000000000000000 /* UIKit.framework */; };
+		36374D560000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C859F40000000000000000 /* Default-568h@2x.png */; };
+		3A241BFC0000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB5289A0000000000000000 /* Foundation.framework */; };
+		3E24F3020000000000000000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B5FFA000000000000000000 /* Images.xcassets */; };
+		C035F4200000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = F946BE000000000000000000 /* Entitlements.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16E968380000000000000000 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		1B5FFA000000000000000000 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		206B3B6A0000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27F31ADE0000000000000000 /* LogoMystro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoMystro.png; sourceTree = "<group>"; };
+		2881C0020000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2A85B7F00000000000000000 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		2AB89B0C0000000000000000 /* Mystro_iOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mystro_iOSViewController.m; sourceTree = "<group>"; };
+		2DB0FE560000000000000000 /* LogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		31200AE30000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32735D9C0000000000000000 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		333EEA0C0000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BB1BB10000000000000000 /* logoBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoBig.png; sourceTree = "<group>"; };
+		3505FAAE0000000000000000 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		36B50F6F0000000000000000 /* LogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		374DB8C30000000000000000 /* Mystro_iOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mystro_iOSViewController.h; sourceTree = "<group>"; };
+		37B37EFB0000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39C859F40000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C53DE300000000000000000 /* Mystro.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mystro.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB5289A0000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		514292200000000000000000 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6EC1CCF00000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2EA5A800000000000000000 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F946BE000000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACAF3C400000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B103100000000000000000 /* UIKit.framework in Frameworks */,
+				24F0B3640000000000000000 /* MapKit.framework in Frameworks */,
+				3A241BFC0000000000000000 /* Foundation.framework in Frameworks */,
+				2D8EFE450000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140900CF0000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				206B3B6A0000000000000000 /* AppDelegate.m */,
+				2DB0FE560000000000000000 /* LogInViewController.m */,
+				2AB89B0C0000000000000000 /* Mystro_iOSViewController.m */,
+				3505FAAE0000000000000000 /* RegisterViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		157E199E0000000000000000 /* Mystro.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				37B37EFB0000000000000000 /* AppDelegate.h */,
+				32735D9C0000000000000000 /* background.jpg */,
+				39C859F40000000000000000 /* Default-568h@2x.png */,
+				F946BE000000000000000000 /* Entitlements.plist */,
+				1B5FFA000000000000000000 /* Images.xcassets */,
+				333EEA0C0000000000000000 /* Info.plist */,
+				16E968380000000000000000 /* LaunchScreen.xib */,
+				36B50F6F0000000000000000 /* LogInViewController.h */,
+				34BB1BB10000000000000000 /* logoBig.png */,
+				27F31ADE0000000000000000 /* LogoMystro.png */,
+				D7F90E700000000000000000 /* MainStoryboard.storyboard */,
+				514292200000000000000000 /* MainStoryboard.storyboard */,
+				374DB8C30000000000000000 /* Mystro_iOSViewController.h */,
+				2A85B7F00000000000000000 /* RegisterViewController.h */,
+				140900CF0000000000000000 /* Supporting Files */,
+			);
+			name = Mystro.iOS;
+			sourceTree = "<group>";
+		};
+		20313F780000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C53DE300000000000000000 /* Mystro.iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AE465520000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				157E199E0000000000000000 /* Mystro.iOS */,
+				35978B2C0000000000000000 /* Frameworks */,
+				20313F780000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35978B2C0000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EC1CCF00000000000000000 /* UIKit.framework */,
+				2881C0020000000000000000 /* MapKit.framework */,
+				3DB5289A0000000000000000 /* Foundation.framework */,
+				31200AE30000000000000000 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BEE17F80000000000000000 /* Mystro.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A0B8560000000000000000 /* Build configuration list for PBXNativeTarget "Mystro.iOS" */;
+			buildPhases = (
+				38F5B4AE0000000000000000 /* Sources */,
+				ACAF3C400000000000000000 /* Frameworks */,
+				21E054390000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mystro.iOS;
+			productName = Mystro.iOS;
+			productReference = 3C53DE300000000000000000 /* Mystro.iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		313AF21E0000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+			};
+			buildConfigurationList = 26ED927C0000000000000000 /* Build configuration list for PBXProject "Mystro.iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2AE465520000000000000000;
+			productRefGroup = 20313F780000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BEE17F80000000000000000 /* Mystro.iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21E054390000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E24F3020000000000000000 /* Images.xcassets in Resources */,
+				13585B9A0000000000000000 /* LaunchScreen.xib in Resources */,
+				1831C8400000000000000000 /* MainStoryboard.storyboard in Resources */,
+				2FADDD6E0000000000000000 /* Info.plist in Resources */,
+				C035F4200000000000000000 /* Entitlements.plist in Resources */,
+				312A0F130000000000000000 /* logoBig.png in Resources */,
+				36374D560000000000000000 /* Default-568h@2x.png in Resources */,
+				24620E400000000000000000 /* LogoMystro.png in Resources */,
+				2EE250FE0000000000000000 /* background.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38F5B4AE0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3422725D0000000000000000 /* AppDelegate.h in Sources */,
+				1CDA2ECC0000000000000000 /* AppDelegate.m in Sources */,
+				33BCAC250000000000000000 /* Mystro_iOSViewController.h in Sources */,
+				27278E6E0000000000000000 /* Mystro_iOSViewController.m in Sources */,
+				26F4AB520000000000000000 /* RegisterViewController.h in Sources */,
+				3174EE100000000000000000 /* RegisterViewController.m in Sources */,
+				332402D10000000000000000 /* LogInViewController.h in Sources */,
+				2A1FF1B80000000000000000 /* LogInViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7F90E700000000000000000 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2EA5A800000000000000000 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C3A6CA20000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = Mystro.iOS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+		C14424D00000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26ED927C0000000000000000 /* Build configuration list for PBXProject "Mystro.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14424D00000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		31A0B8560000000000000000 /* Build configuration list for PBXNativeTarget "Mystro.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3A6CA20000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 313AF21E0000000000000000 /* Project object */;
+}

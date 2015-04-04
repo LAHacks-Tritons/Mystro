@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Drawing;
-
+using Xamarin.Themes;
+using Xamarin.Themes.Core;
+using Xamarin.Themes.TrackBeam;
 using Foundation;
 using UIKit;
 
 namespace Mystro.iOS
 {
 	public partial class Mystro_iOSViewController : UIViewController
-	{
+	{	
+
 		public Mystro_iOSViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -25,14 +28,25 @@ namespace Mystro.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			
+
+			EdgesForExtendedLayout = UIRectEdge.None;
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
 		public override void ViewWillAppear (bool animated)
 		{
+			ThemeManager.Current.Apply(View);
+			ThemeManager.Current.Apply (logInBtn);
+			ThemeManager.Current.Apply (stuRegisterBtn);
+			ThemeManager.Current.Apply(profRegisterBtn);
+			ThemeManager.Current.Apply(parentsRegisterBtn);
+
+
 			base.ViewWillAppear (animated);
 		}
+
+
+	
 
 		public override void ViewDidAppear (bool animated)
 		{

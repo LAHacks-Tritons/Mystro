@@ -1,0 +1,5 @@
+/Users/Atl/Documents/Mystro/Mystro/Mystro/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/Atl/Documents/Mystro/Mystro/Mystro/bin/Debug/Mystro.dll.mdb
+/Users/Atl/Documents/Mystro/Mystro/Mystro/bin/Debug/Mystro.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro/obj/Debug/Mystro.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro/obj/Debug/Mystro.dll.mdb
