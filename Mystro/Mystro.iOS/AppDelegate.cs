@@ -7,6 +7,7 @@ using Xamarin.Themes.TrackBeam;
 
 using Foundation;
 using UIKit;
+using iOSsample;
 
 namespace Mystro.iOS
 {
@@ -17,7 +18,8 @@ namespace Mystro.iOS
 	public partial class AppDelegate : UIApplicationDelegate
 	{
 		// class-level declarations
-		
+		public static User LoggedUser;
+
 		public override UIWindow Window {
 			get;
 			set;
@@ -49,7 +51,6 @@ namespace Mystro.iOS
 		public override void FinishedLaunching (UIApplication application)
 		{
 			ThemeManager.Register<TrackBeamTheme>().Apply();
-
 		}
 	}
 }

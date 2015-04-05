@@ -26,7 +26,4 @@ Global
 		{2447E45A-82C1-4F1E-92C4-BFCD88C7A753}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{2447E45A-82C1-4F1E-92C4-BFCD88C7A753}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = FMCalendarSample.iOS.csproj
-	EndGlobalSection
 EndGlobal

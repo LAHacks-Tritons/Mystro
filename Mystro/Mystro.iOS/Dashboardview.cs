@@ -15,6 +15,10 @@ namespace Mystro.iOS
 		{
 		}
 
+		public Dashboardview () : base ()
+		{
+		}
+
 		private class CustomTheme : TrackBeamTheme
 		{
 			//Change the BaseTintColor
@@ -52,6 +56,11 @@ namespace Mystro.iOS
 				classStngBtn.UserInteractionEnabled = false;
 
 			}
+
+			commBtn.TouchUpInside += (object sender, EventArgs e) => {
+
+				NavigationController.PushViewController(new MessagesViewController(),true);
+			};
 		}
 
 

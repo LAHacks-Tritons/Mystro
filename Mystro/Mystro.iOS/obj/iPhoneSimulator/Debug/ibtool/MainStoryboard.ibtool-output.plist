@@ -8,6 +8,21 @@
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
 	<dict>
+		<key>NMD-Qq-KI2</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>NMD-Qq-KI2</string>
+				</array>
+				<key>message</key>
+				<string>Scene is unreachable due to lack of entry points and does not have an identifier for runtime access via -instantiateViewControllerWithIdentifier:.</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 		<key>RQe-fs-R2I</key>
 		<array>
 			<dict>

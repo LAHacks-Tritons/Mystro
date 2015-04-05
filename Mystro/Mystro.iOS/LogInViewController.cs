@@ -31,6 +31,28 @@ namespace Mystro.iOS
 		
 		}
 
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+			logInButton.TouchUpInside += (object sender, EventArgs e) => {
+
+				if(!string.IsNullOrEmpty(emailLogInBox.Text) && !string.IsNullOrEmpty(passLogInBox.Text)) {
+					
+					string lan = "en";
+					if (
+						emailLogInBox.Text == "atlsaber@gmail.com"){
+						lan = "es";
+					}
+
+					AppDelegate.LoggedUser = new iOSsample.User() {Username = emailLogInBox.Text, LastMessagesRead = DateTime.Now,Language = lan };
+
+					NavigationController.PushViewController(Storyboard.InstantiateViewController("DashboardviewID")
+						,true);
+				}
+
+			};
+		}
+
 		public override void ViewWillAppear (bool animated)
 		{
 			//ThemeManager.Current.Apply(View);

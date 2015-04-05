@@ -103,7 +103,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="XCalendar">
-      <HintPath>../../../lib\/ios-unified/XCalendar.dll</HintPath>
+      <HintPath>..\..\..\lib\ios-unified\XCalendar.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

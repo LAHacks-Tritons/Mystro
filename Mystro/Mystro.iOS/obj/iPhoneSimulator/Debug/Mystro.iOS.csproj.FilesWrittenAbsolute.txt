@@ -97,3 +97,17 @@
 /Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/pending_tasks.png
 /Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/students.png
 /Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/students_table.png
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/GravatarMobile.Core.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/GravatarMobile.iOS.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/Chat.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/Chat.dll.mdb
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/MystroLibraries.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/MystroLibraries.dll.mdb
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/Microsoft.WindowsAzure.Mobile.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/Microsoft.WindowsAzure.Mobile.Ext.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/bin/iPhoneSimulator/Debug/System.Net.Http.Primitives.dll
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/DashboardviewID.nib
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/ChatBar.png
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/green.png
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/grey.png

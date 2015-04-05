@@ -103,6 +103,14 @@
     <Reference Include="XCalendar">
       <HintPath>..\Components\XCalendar-1.1\lib\ios-unified\XCalendar.dll</HintPath>
     </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="GravatarMobile.Core">
+      <HintPath>..\Components\gravatarmobile-1.2\lib\ios-unified\GravatarMobile.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GravatarMobile.iOS">
+      <HintPath>..\Components\gravatarmobile-1.2\lib\ios-unified\GravatarMobile.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
@@ -152,6 +160,14 @@
     <Compile Include="classStandingView.designer.cs">
       <DependentUpon>classStandingView.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessagesViewController.cs" />
+    <Compile Include="MessagesViewController.designer.cs">
+      <DependentUpon>MessagesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessagingViewController.cs" />
+    <Compile Include="MessagingViewController.designer.cs">
+      <DependentUpon>MessagingViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -167,6 +183,10 @@
       <Version>1.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+    <XamarinComponentReference Include="gravatarmobile">
+      <Version>1.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\logoBig.png" />
@@ -180,5 +200,18 @@
     <BundleResource Include="Resources\pending_tasks.png" />
     <BundleResource Include="Resources\students.png" />
     <BundleResource Include="Resources\students_table.png" />
+    <BundleResource Include="Resources\ChatBar.png" />
+    <BundleResource Include="Resources\green.png" />
+    <BundleResource Include="Resources\grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\Archive\Mystro\Mystro.iOS\Plugins\BubbleCell\BubbleCell\Chat\Chat.csproj">
+      <Project>{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}</Project>
+      <Name>Chat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Desktop\Archive\Mystro\MystroLibraries\MystroLibraries.csproj">
+      <Project>{55C6BE18-39AA-4B9F-A101-802E81F747F2}</Project>
+      <Name>MystroLibraries</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

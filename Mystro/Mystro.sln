@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystro.iOS", "Mystro.iOS\My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystro", "Mystro\Mystro.csproj", "{A5B4543C-83D5-4255-B7CE-F169621590F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MystroLibraries", "..\..\..\Desktop\Archive\Mystro\MystroLibraries\MystroLibraries.csproj", "{55C6BE18-39AA-4B9F-A101-802E81F747F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat", "..\..\..\Desktop\Archive\Mystro\Mystro.iOS\Plugins\BubbleCell\BubbleCell\Chat\Chat.csproj", "{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -15,6 +19,30 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Release|iPhone.Build.0 = Release|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{091C0FB7-CDA0-4B18-A8D2-C663455EFB5A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Release|iPhone.Build.0 = Release|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{55C6BE18-39AA-4B9F-A101-802E81F747F2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{8BC8AC34-9DFD-4759-9903-E5FDEFA899CD}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{8BC8AC34-9DFD-4759-9903-E5FDEFA899CD}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{8BC8AC34-9DFD-4759-9903-E5FDEFA899CD}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
