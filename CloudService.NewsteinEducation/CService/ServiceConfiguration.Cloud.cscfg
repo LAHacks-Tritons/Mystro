@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="CService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="WRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=newsteineducationstor;AccountKey=8CaWZ5CtKn0vzg8LfU3hokYD0m5hKM/ZJtH9Ea3sJjpkX7gck7YVwuA5sNS48DRSSyIxsT4cJbj92L6vFEM1nA==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

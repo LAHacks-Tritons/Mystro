@@ -1,0 +1,108 @@
+﻿@model WRole.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+<div class="page-signin">
+    <div class="signin-header">
+        <div class="container text-center">
+            <section class="logo">
+                <a href="@Url.Action("Index", "Start")">Newstein Education</a>
+            </section>
+        </div>
+    </div>
+    <div class="signin-body">
+        <div class="container">
+            <div id="loginForm" class="form-container">
+                @Html.ValidationSummary(true)
+
+
+
+
+                <section id="socialLoginForm" class="row signin-social text-center">
+
+                    @Html.Partial("_ExternalLoginsListPartial", new WRole.Models.ExternalLoginViewModel() { Action = "ExternalLogin", ReturnUrl = ViewBag.ReturnUrl })
+
+</section>
+                <span class="line-thru">OR</span>
+
+@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+                    @Html.AntiForgeryToken()
+
+
+                    <fieldset>
+
+
+
+
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                </span>
+
+                                @Html.TextBoxFor(m => m.UserName, new { @type = "email", @placeholder = "Email", @class = "form-control" })
+
+
+                            </div>
+                            @Html.ValidationMessageFor(m => m.UserName)
+
+
+                        </div>
+
+
+             
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-lock"></span>
+                                </span>
+
+                                @Html.PasswordFor(m => m.Password, new {@type="password",@placeholder="Password", @class = "form-control" })
+
+                            </div>
+                            @Html.ValidationMessageFor(m => m.Password)
+
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                      
+                                <div class="checkbox">
+                                    @Html.CheckBoxFor(m => m.RememberMe)
+                                    @Html.LabelFor(m => m.RememberMe)
+                                </div>
+                            </div>
+                        </div>
+   
+        
+                        <div class="form-group">
+                            <input type="submit" value="Log In" class="btn btn-primary btn-lg btn-block" />
+                        </div>
+
+                        
+                    </fieldset>
+}
+                <section>
+
+                    <p class="text-center"><a href="#">Forgot your password?</a></p>
+                    <p class="text-center text-muted text-small">Don't have an account yet? @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+

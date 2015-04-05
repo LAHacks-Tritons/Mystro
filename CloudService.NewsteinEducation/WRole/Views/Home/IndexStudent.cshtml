@@ -1,0 +1,342 @@
+﻿<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+    <!-- stats -->
+    <div class="row dashboard-stats">
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-google-plus">
+                    <i class="fa fa-rocket text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">15<span class="size-h3">%</span></p>
+                    <p class="text-muted no-margin"><span data-i18n="Growth"></span></p><br />
+                </div>
+            </section>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-info">
+                    <i class="fa fa-pencil text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">5</p>
+                    <p class="text-muted no-margin"><span data-i18n="My subjects"></span></p><br />
+                </div>
+            </section>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-success">
+                    <i class="fa fa-check text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">4</p>
+                    <p class="text-muted no-margin"><span data-i18n="Tasks completed"></span></p>
+                </div>
+            </section>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-warning">
+                    <i class="fa fa-exclamation text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">1</p>
+                    <p class="text-muted no-margin"><span data-i18n="Pending tasks"></span></p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- end stats -->
+    <div class="row">
+        <div class="col-md-8">
+
+            <section class="panel panel-default">
+                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Grade progress"></span></strong></div>
+                <div class="panel-body" data-ng-controller="studentChartCtrl">
+                    <div morris-chart
+                         data-data="mainData"
+                         data-type="bar"
+                         data-xkey="student"
+                         data-ykeys='["Report1", "Report2", "Report3"]'
+                         data-labels='["Report 1", "Report 2", "Report 3"]'
+                         data-line-colors='["#FDD761","#FF7857","#7ACBEE"]'
+                         data-line-width="0"
+                         data-behave-like-line="true"
+                         data-point-size="0"
+                         data-stacked="true"></div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section class="panel panel-default">
+                <div class="panel-heading"> <strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Real time projections"></span></strong> </div>
+                <div class="panel-body" data-ng-controller="flotChartCtrl.realtime">
+                    <div data-flot-chart-realtime
+                         data-type="realtime"
+                         style="width: 100%; height: 345px;"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col-md-6">
+
+                <!-- List group -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Notifications</strong></div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">2</span>
+                            Upcoming Exams
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-warning">1</span>
+                            Events
+                        </li>
+                        <!--<li class="list-group-item">
+                            <span class="badge badge-info">1</span>
+                            Unused Keys
+                        </li>-->
+                        <!--
+                        <li class="list-group-item">
+                            <span class="badge badge-success">3</span>
+                            Vestibulum at eros
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-danger">5</span>
+                            Porta ac consectetur ac
+                        </li>-->
+                    </ul>
+                </div>
+                <!-- end List group -->
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Algebra"></span></strong></div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Skill</th>
+                                <th>Diagnostic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Factoring</td>
+                                <td>
+                                    <!--<span class="label label-info">-->
+
+
+                                    <progressbar class="progressbar-xs" value="73" type="warning">
+                                        <span class="label label-warning">73%</span>
+                                    </progressbar>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Exponents Law</td>
+                                <td>
+                                    <progressbar class="progressbar-xs" value="97" type="success">
+
+                                        <!--<span class="label label-primary">--><span class="label label-success">97%</span>
+                                    </progressbar>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Arithmetic</td>
+                                <td>
+                                    <progressbar class="progressbar-xs" value="92" type="success">
+
+                                        <span class="label label-success">
+                                            92%
+                                        </span>
+
+                                    </progressbar>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Solving Linear Systems</td>
+                                <td>
+
+                                    <progressbar class="progressbar-xs" value="27" type="danger">
+
+                                        <span class="label label-danger">27%</span>
+                                    </progressbar>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Radical Rules</td>
+                                <td>
+                                    <progressbar class="progressbar-xs" value="60" type="warning">
+
+                                        <span class="label label-warning">60%</span>
+                                    </progressbar>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Media object -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Discussion Board</strong></div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img alt="" src="/images/g1.jpg" class="img-rounded img64_64">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce cfelis in faucibus.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img alt="" src="/images/g1.jpg" class="img-rounded img64_64">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Discussion heading</h4>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at. Donec lacinia congue felis in faucibus.</p>
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img alt="" src="/images/g1.jpg" class="img-rounded img64_64">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Discussion heading</h4>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus  Donec lacinia congue felis in faucibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Media object -->
+
+            </div>
+
+            <div class="col-md-6">
+
+
+
+                <section class="panel panel-box">
+                    <div class="panel-left panel-item bg-warning">
+                        <i class="fa fa-list-alt text-huge"></i>
+                    </div>
+                    <div class="panel-right panel-item bg-reverse">
+                        <p class="size-h1">20</p>
+                        <p class="text-muted">Days till next progress report</p>
+                    </div>
+                </section>
+                <section class="panel panel-box">
+                    <div class="panel-left panel-item bg-reverse">
+                        <p class="size-h1">13</p>
+                        <p class="text-muted">Participation Points</p>
+                    </div>
+                    <div class="panel-right panel-item bg-success">
+                        <i class="fa fa-star text-huge"></i>
+                    </div>
+                </section>
+
+
+                <!--<div class="row">
+
+
+
+
+                    <div class="col-sm-6">
+                        <section class="panel panel-box">
+                            <div class="panel-top bg-facebook">
+                                <div class="divider divider"></div>
+                                <i class="fa fa-facebook size-h1"></i>
+                                <div class="divider divider"></div>
+                            </div>
+                            <div class="list-justified-container">
+                                <ul class="list-justified text-center">
+                                    <li>
+                                        <p class="size-h3">575</p>
+                                        <p class="text-muted">Followers</p>
+                                    </li>
+                                    <li>
+                                        <p class="size-h3">23</p>
+                                        <p class="text-muted">Following</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-sm-6">
+                        <section class="panel panel-box">
+                            <div class="panel-top bg-twitter">
+                                <div class="divider divider"></div>
+                                <i class="fa fa-twitter size-h1"></i>
+                                <div class="divider divider"></div>
+                            </div>
+                            <div class="list-justified-container">
+                                <ul class="list-justified text-center">
+                                    <li>
+                                        <p class="size-h3">1345</p>
+                                        <p class="text-muted">Followers</p>
+                                    </li>
+                                    <li>
+                                        <p class="size-h3">42</p>
+                                        <p class="text-muted">Following</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>-->
+
+                <section class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Student's subject progress"></span></strong></div>
+                    <div class="panel-body" data-ng-controller="ProgressDemoCtrl">
+                        <p>Algebra</p>
+                        <progressbar class="progressbar-xs" value="80" type="success">
+                            <span class="label label-success">80%</span>
+                        </progressbar>
+                        <p>Physics</p>
+                        <progressbar class="progressbar-xs" value="60" type="danger">
+                            <span class="label label-danger">60%</span>
+                        </progressbar>
+                        <p>Chemistry</p>
+                        <progressbar class="progressbar-xs" value="70" type="warning">
+                            <span class="label label-warning">70%</span>
+                        </progressbar>
+                        <p>English</p>
+                        <progressbar class="progressbar-xs" value="90" type="success">
+                            <span class="label label-success">90%</span>
+                        </progressbar>
+                        <p>Reading</p>
+                        <progressbar class="progressbar-xs" value="85" type="success">
+                            <span class="label label-success">85%</span>
+                        </progressbar>
+                    </div>
+                </section>
+
+                <section class="panel panel-box" data-ng-controller="sparklineCtrl">
+                    <div class="panel-top bg-success">
+                        <div data-sparkline
+                             data-data="demoData1.data"
+                             data-options="demoData1.options"></div>
+                    </div>
+                    <div class="list-justified-container">
+                        <ul class="list-justified text-center">
+                            <li>
+                                <p class="size-h3">40</p>
+                                <p class="text-muted">Month's Page View</p>
+                            </li>
+                            <li>
+                                <p class="size-h3">5</p>
+                                <p class="text-muted">Today's Views</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>

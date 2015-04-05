@@ -1,0 +1,560 @@
+﻿<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+
+    <!-- stats -->
+    <div class="row dashboard-stats">
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-google-plus">
+                    <i class="fa fa-rocket text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">80<span class="size-h3">%</span></p>
+                    <p class="text-muted no-margin"><span data-i18n="Growth"></span></p><br />
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-info">
+                    <i class="fa fa-users text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">5</p>
+                    <p class="text-muted no-margin"><span data-i18n="My students"></span></p><br />
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-success">
+                    <i class="fa fa-check text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">8</p>
+                    <p class="text-muted no-margin"><span data-i18n="Tasks completed"></span></p>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-warning">
+                    <i class="fa fa-exclamation text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">3</p>
+                    <p class="text-muted no-margin"><span data-i18n="Pending tasks"></span></p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- end stats -->
+
+    <div class="row">
+        <div class="col-md-8">
+
+
+
+            <section class="panel panel-default">
+                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Grade progress"></span></strong></div>
+                <div class="panel-body" data-ng-controller="morrisChartCtrl">
+                    <div morris-chart
+                         data-data="mainData"
+                         data-type="bar"
+                         data-xkey="student"
+                         data-ykeys='["Report1", "Report2", "Report3"]'
+                         data-labels='["Algebra", "Physics", "English"]'
+                         data-line-colors='["#FDD761","#FF7857","#7ACBEE"]'
+                         data-line-width="0"
+                         data-behave-like-line="true"
+                         data-point-size="0"></div>
+                </div>
+            </section> 
+        </div>
+        <div class="col-md-4">
+
+
+            <section class="panel panel-default">
+                <div class="panel-heading"> <strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Real time projections"></span></strong> </div>
+                <div class="panel-body" data-ng-controller="flotChartCtrl.realtime">
+                    <div data-flot-chart-realtime
+                         data-type="realtime"
+                         style="width: 100%; height: 345px;"></div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+
+    <section>
+        <div class="row">
+            <div class="col-md-6">
+
+                <!-- List group -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Notifications</strong></div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Upcoming Exams
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-warning">2</span>
+                            Events
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-info">1</span>
+                            Unused Invitations
+                        </li>
+                        <!--
+                        <li class="list-group-item">
+                            <span class="badge badge-success">3</span>
+                            Vestibulum at eros
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-danger">5</span>
+                            Porta ac consectetur ac
+                        </li>-->
+                    </ul>
+                </div>
+                <!-- end List group -->
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Students"></span></strong></div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Week's Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Amery Lee</td>
+                                <td>
+                                    <!--<span class="label label-info">-->
+
+
+                                    <progressbar class="progressbar-xs" value="73" type="warning">
+                                        <span class="label label-warning">73%</span>
+                                    </progressbar>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Romayne Carlyn</td>
+                                <td>
+                                    <progressbar class="progressbar-xs" value="97" type="success">
+
+                                        <!--<span class="label label-primary">--><span class="label label-success">97%</span>
+                                    </progressbar>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Marybeth Joanna</td>
+                                <td>
+                                    <progressbar class="progressbar-xs" value="92" type="success">
+
+                                        <span class="label label-success">
+                                            92%
+                                        </span>
+
+                                    </progressbar>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Jonah Benny</td>
+                                <td>
+
+                                    <progressbar class="progressbar-xs" value="27" type="danger">
+
+                                        <span class="label label-danger">27%</span>
+                                    </progressbar>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Daly Royle</td>
+                                <td>
+                                    <progressbar class="progressbar-xs" value="60" type="warning">
+
+                                        <span class="label label-warning">60%</span>
+                                    </progressbar>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Media object -->
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Discussion Board</strong></div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img alt="" src="images/g1.jpg" class="img-rounded img64_64">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Discussion heading</h4>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce cfelis in faucibus.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img alt="" src="images/g1.jpg" class="img-rounded img64_64">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Discussion heading</h4>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at. Donec lacinia congue felis in faucibus.</p>
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img alt="" src="images/g1.jpg" class="img-rounded img64_64">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Discussion heading</h4>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus  Donec lacinia congue felis in faucibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Media object -->
+
+            </div>
+
+            <div class="col-md-6">
+
+
+
+                <section class="panel panel-box">
+                    <div class="panel-left panel-item bg-warning">
+                        <i class="fa fa-list-alt text-huge"></i>
+                    </div>
+                    <div class="panel-right panel-item bg-reverse">
+                        <p class="size-h1">20</p>
+                        <p class="text-muted">Days till next progress report</p>
+                    </div>
+                </section>
+                <section class="panel panel-box">
+                    <div class="panel-left panel-item bg-reverse">
+                        <p class="size-h1">56</p>
+                        <p class="text-muted">Apples Received</p>
+                    </div>
+                    <div class="panel-right panel-item bg-success">
+                        <img style="width:72px" class="fa fa-apple text-huge" src="http://i1128.photobucket.com/albums/m489/Joe_Wii/apple.png?t=1401134755" />
+                    </div>
+                </section>
+
+
+                <!--<div class="row">
+
+
+
+
+                    <div class="col-sm-6">
+                        <section class="panel panel-box">
+                            <div class="panel-top bg-facebook">
+                                <div class="divider divider"></div>
+                                <i class="fa fa-facebook size-h1"></i>
+                                <div class="divider divider"></div>
+                            </div>
+                            <div class="list-justified-container">
+                                <ul class="list-justified text-center">
+                                    <li>
+                                        <p class="size-h3">575</p>
+                                        <p class="text-muted">Followers</p>
+                                    </li>
+                                    <li>
+                                        <p class="size-h3">23</p>
+                                        <p class="text-muted">Following</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-sm-6">
+                        <section class="panel panel-box">
+                            <div class="panel-top bg-twitter">
+                                <div class="divider divider"></div>
+                                <i class="fa fa-twitter size-h1"></i>
+                                <div class="divider divider"></div>
+                            </div>
+                            <div class="list-justified-container">
+                                <ul class="list-justified text-center">
+                                    <li>
+                                        <p class="size-h3">1345</p>
+                                        <p class="text-muted">Followers</p>
+                                    </li>
+                                    <li>
+                                        <p class="size-h3">42</p>
+                                        <p class="text-muted">Following</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>-->
+
+                <section class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Tutor objective progress"></span></strong></div>
+                    <div class="panel-body" data-ng-controller="ProgressDemoCtrl">
+                        <p>Brandon Hernandez</p>
+                        <progressbar class="progressbar-xs" value="55"></progressbar>
+                        <p>Natalie Alvarez</p>
+                        <progressbar class="progressbar-xs" value="43" type="success"></progressbar>
+                        <p>Ernesto Garcia</p>
+                        <progressbar class="progressbar-xs" value="68" type="info"></progressbar>
+                        <p>Xavier Martinez</p>
+                        <progressbar class="progressbar-xs" value="86" type="warning"></progressbar>
+                        <p>Liz Ramirez</p>
+                        <progressbar class="progressbar-xs" value="77" type="danger"></progressbar>
+                    </div>
+                </section>
+
+                <section class="panel panel-box" data-ng-controller="sparklineCtrl">
+                    <div class="panel-top bg-success">
+                        <div data-sparkline
+                             data-data="demoData1.data"
+                             data-options="demoData1.options"></div>
+                    </div>
+                    <div class="list-justified-container">
+                        <ul class="list-justified text-center">
+                            <li>
+                                <p class="size-h3">575</p>
+                                <p class="text-muted">Month's Page View</p>
+                            </li>
+                            <li>
+                                <p class="size-h3">23</p>
+                                <p class="text-muted">Today's Views</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--
+<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+    <div class="row dashboard-stats">
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-success">
+                    <i class="fa fa-rocket text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">80<span class="size-h3">%</span></p>
+                    <p class="text-muted no-margin"><span data-i18n="Growth"></span></p>
+                </div>
+            </section>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-info">
+                    <i class="fa fa-users text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">132</p>
+                    <p class="text-muted no-margin"><span data-i18n="New users"></span></p>
+                </div>
+            </section>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-warning">
+                    <i class="fa fa-dollar text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">3,760</p>
+                    <p class="text-muted no-margin"><span data-i18n="Profit"></span></p>
+                </div>
+            </section>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <section class="panel panel-box">
+                <div class="panel-left panel-item bg-danger">
+                    <i class="fa fa-shopping-cart text-large stat-icon"></i>
+                </div>
+                <div class="panel-right panel-item bg-reverse">
+                    <p class="size-h1 no-margin">369</p>
+                    <p class="text-muted no-margin"><span data-i18n="Sales"></span></p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <section class="panel panel-default">
+                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Data"></span></strong></div>
+                <div class="panel-body" data-ng-controller="morrisChartCtrl">
+                    <div morris-chart
+                         data-data="mainData"
+                         data-type="area"
+                         data-xkey="month"
+                         data-ykeys='["xbox", "will", "playstation"]'
+                         data-labels='["xbox", "will", "playstation"]'
+                         data-line-colors='["#FDD761","#FF7857","#7ACBEE"]'
+                         data-line-width="0"
+                         data-behave-like-line="true"
+                         data-point-size="0"></div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section class="panel panel-default">
+                <div class="panel-heading"> <strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Realtime Data"></span></strong> </div>
+                <div class="panel-body" data-ng-controller="flotChartCtrl.realtime">
+                    <div data-flot-chart-realtime
+                         data-type="realtime"
+                         style="width: 100%; height: 345px;"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col-md-6">
+                <section class="panel panel-box">
+                    <div class="panel-left panel-item bg-warning">
+                        <i class="fa fa-sun-o text-huge"></i>
+                    </div>
+                    <div class="panel-right panel-item bg-reverse">
+                        <p class="size-h1">66º</p>
+                        <p class="text-muted">Sunny Day</p>
+                    </div>
+                </section>
+                <section class="panel panel-box">
+                    <div class="panel-left panel-item bg-reverse">
+                        <p class="size-h1">56</p>
+                        <p class="text-muted">Gifts Received</p>
+                    </div>
+                    <div class="panel-right panel-item bg-success">
+                        <i class="fa fa-heart text-huge"></i>
+                    </div>
+                </section>
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Table"></span></strong></div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Project</th>
+                                <th>Manager</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>TWLT</td>
+                                <td>Amery Lee</td>
+                                <td><span class="label label-info">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>A16Z</td>
+                                <td>Romayne Carlyn</td>
+                                <td><span class="label label-primary">Due</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Q300</td>
+                                <td>Marybeth Joanna</td>
+                                <td><span class="label label-success">Due</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>DARK</td>
+                                <td>Jonah Benny</td>
+                                <td><span class="label label-danger">Blocked</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>RVNG</td>
+                                <td>Daly Royle</td>
+                                <td><span class="label label-warning">Suspended</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <section class="panel panel-box">
+                            <div class="panel-top bg-facebook">
+                                <div class="divider divider"></div>
+                                <i class="fa fa-facebook size-h1"></i>
+                                <div class="divider divider"></div>
+                            </div>
+                            <div class="list-justified-container">
+                                <ul class="list-justified text-center">
+                                    <li>
+                                        <p class="size-h3">575</p>
+                                        <p class="text-muted">Followers</p>
+                                    </li>
+                                    <li>
+                                        <p class="size-h3">23</p>
+                                        <p class="text-muted">Following</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-sm-6">
+                        <section class="panel panel-box">
+                            <div class="panel-top bg-twitter">
+                                <div class="divider divider"></div>
+                                <i class="fa fa-twitter size-h1"></i>
+                                <div class="divider divider"></div>
+                            </div>
+                            <div class="list-justified-container">
+                                <ul class="list-justified text-center">
+                                    <li>
+                                        <p class="size-h3">1345</p>
+                                        <p class="text-muted">Followers</p>
+                                    </li>
+                                    <li>
+                                        <p class="size-h3">42</p>
+                                        <p class="text-muted">Following</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <section class="panel panel-default">
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Progress"></span></strong></div>
+                    <div class="panel-body" data-ng-controller="ProgressDemoCtrl">
+                        <p>Tasks</p>
+                        <progressbar class="progressbar-xs" value="55"></progressbar>
+                        <p>Messages</p>
+                        <progressbar class="progressbar-xs" value="43" type="success"></progressbar>
+                        <p>Notifications</p>
+                        <progressbar class="progressbar-xs" value="68" type="info"></progressbar>
+                        <p>Mails</p>
+                        <progressbar class="progressbar-xs" value="86" type="warning"></progressbar>
+                        <p>Bugs</p>
+                        <progressbar class="progressbar-xs" value="77" type="danger"></progressbar>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>
+-->

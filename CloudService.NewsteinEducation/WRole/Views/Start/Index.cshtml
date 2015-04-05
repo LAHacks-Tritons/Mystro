@@ -1,0 +1,374 @@
+﻿@model WRole.Models.StartMessage
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+ <!--<![endif]-->
+<head>
+    <title>Mystro</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
+    <link rel="stylesheet" href="/assets/plugins/animate-css/animate.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/assets/css/styles-4.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll">
+    <!-- ******HEADER****** -->
+    <header id="top" class="header navbar-fixed-top">
+        <div class="container">
+            <h1 class="logo pull-left">
+                <a class="scrollto" href="#promo">
+                    <img id="logo-image" class="logo-image" src="/assets/images/logo/logo.png" alt="Logo">
+                    <span class="logo-title">Mystro</span>
+                </a>
+            </h1><!--//logo-->
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features">Features</a></li>
+                       <!--  <li class="nav-item"><a class="scrollto" href="#how">How it works</a></li>-->
+                      <!--  <li class="nav-item"><a class="scrollto" href="#faq">FAQ</a></li>-->
+                        <li class="nav-item"><a class="scrollto" href="#story">Story</a></li>
+                        <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header has-pattern">
+        <div class="container">
+            <div class="row">
+                <div class="overview col-md-8 col-sm-12 col-xs-12">
+                    <h2 class="title">"Working in the core to a higher score!"</h2>
+                    <ul class="summary">
+                        <li>Engaging and personalized learning experience for every student</li>
+                        <li>Identify, follow and convert deficiencies into strengths</li>
+                        <li>Numerous resources available to you</li>
+                        <li>Make educational goals possible!</li>
+                    </ul>
+                    <div class="download-area">
+                        <ul class="btn-group list-inline">
+                            <li ><a href="@Url.Action("Register", "Account")">Register</a></li>
+                            <li ><a href="@Url.Action("Login", "Account")">Log In</a></li>
+                        </ul>
+                        <div class="note text-center">
+                            <p>Become part of the educational<br />revolution today</p>
+                            <span class="left-arrow"></span>
+                            <span class="right-arrow"></span>
+                        </div><!--//note-->
+                    </div>
+                </div><!--//overview-->
+
+                <!--// iPad starts -->
+                <div class="ipad ipad-white col-md-4 col-sm-12 col-xs-12 col-md-pull-1" >
+                    <div class="ipad-holder">
+                        <div class="ipad-holder-inner">
+                            <div class="slider flexslider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="/assets/images/ipad/ipad-slide-1.png" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="/assets/images/ipad/ipad-slide-2.png" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="/assets/images/ipad/ipad-slide-3.png" alt="" />
+                                    </li>
+                                </ul><!--//slides-->
+                            </div><!--//flexslider-->
+                        </div><!--//ipad-holder-inner-->
+                    </div><!--//ipad-holder-->
+                </div><!--//ipad-->
+                <!--// iPad ends -->
+
+
+
+
+
+
+                </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//promo-->
+    <!-- ******FEATURES****** -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <h2 class="title text-center sr-only">Features</h2>
+                <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="icon">
+                        <i class="fa fa-dot-circle-o"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Targeted Assessment</h3>
+                        <p>Eliminates blind tutoring. Know with precision the students' weaknesses within a concept to convert them to strengths and ultimately master common core standards.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="icon">
+                        <i class="fa fa-rocket"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Track and Grow</h3>
+                        <p>Full detailed student reports that allows continous monitoring on students' progress. All data is recorded and used as reference to demonstrate growth.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="icon">
+                        <i class="fa fa-users"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Bridging Students, Instructors and Parents</h3>
+                        <p>Encouraging the community to collaborate together by providing full recurring reports on students' progress to their parents in the language of their choice.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="icon">
+                        <i class="fa fa-bar-chart-o"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Real-Time Projections</h3>
+                        <p>Reliable predictions based on students' progress that allows instructors and students to foresee success or failure. Helps you to adapt and strategize more efficently.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+            </div><!--//row-->
+
+            <div class="row">
+                <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="icon">
+                        <i class="fa fa-calendar"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Organize Your Schedule</h3>
+                        <p>School-based agenda that helps students be on top of their assignments. Provides upcoming tests, deadlines, and events notifications. Facilitates time management for students.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="icon">
+                        <i class="fa fa-comments"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Communicate Effectively</h3>
+                        <p>Discussion boards and direct messaging available to facilitate communication between instructors, students, and parents.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="icon">
+                        <i class="fa fa-trophy"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Incentive-Based Awards</h3>
+                        <p>Outstanding student achievement is compensated with recognition by their instructors and scholarship opportunities. </p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="icon">
+                        <i class="fa fa-pencil-square-o"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Add Your Style</h3>
+                        <p>Different resources that allows instructors to develop and upload videos, worksheets and online activities. </p>
+                    </div><!--//content-->
+                </div><!--//item-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//features-->
+    <!-- ******HOW****** -->
+  <!--//how-->
+    <!-- ******FAQ****** -->
+    <!--//faq-->
+    <!-- ******STORY****** -->
+    <section id="story" class="contact story section has-pattern">
+        <div class="container">
+            <div class="row">
+                <div class="content col-md-6 col-sm-6 col-xs-12 text-center">
+                    <h2 class="title">Story Behind the Project</h2>
+                    <p>Mystro was born out of our initiative to provide students and institutions with a powerful tool that can revolutionize students' performance.</p><p>
+As high school and college tutors, we always work towards developing resources to better assist schools from our community. However, we wanted to reach students of any kind from all over the world. Therefore, we initiated and constructed a system that reflects both of our experiences as tutors and the needs that thousands of students have.</p><p>
+We are convinced that there are many factors that affect student performance that go beyond academics. For this reason our system does not conform to the success of few but rather continues to evolve to become as personalized as needed to guarantee the success of each and every student!</p>
+                </div><!--//content-->
+                <div class="team col-md-5 col-sm-5 col-md-offset-1 col-sm-offset-1 col-xs-12">
+                    <div class="row">
+                        <div class="member col-md-3 text-center">
+                            <p class="name">Atl Arredondo</p>
+                            <p class="title">Co-founder & CEO</p>
+                            <ul class="connect list-inline">
+                                <li><a target="_blank" href="https://www.linkedin.com/in/atlarredondo/en"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="member col-md-3 text-center">
+                            <p class="name">Justino Guerrero</p>
+                            <p class="title">Co-founder & President of Engineering</p>
+                            <ul class="connect list-inline">
+                               
+
+                                <li><a target="_blank" href="http://www.linkedin.com/in/justinoguerrero/en"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div><!--//member-->
+                        <div class="member col-md-3 text-center">
+                            <p class="name">Jose Martinez</p>
+                            <p class="title">Co-founder & CTO</p>
+                            <ul class="connect list-inline">
+                                <li><a target="_blank" href="https://twitter.com/jsmart004"><i class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="http://www.linkedin.com/in/jsmart004/"><i class="fa fa-linkedin"></i></a></li>
+                                <li class="row-end"><a target="_blank" href="https://www.facebook.com/martinez.jose.armando"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div><!--//member-->
+                    </div>
+                </div><!--//team-->
+            </div><!--//row-->
+        </div><!--//container-->
+    <!--//story-->
+    <!-- ******TESTIMONIALS****** -->
+    
+<!--//Testimonials-->
+    <!-- ******CONTACT****** -->
+        <div id="contact" class="container">
+        <br/><br /><br /><br />
+            <div class="row text-center">
+                <h2 class="title">Contact US</h2>
+                <div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+                    <p>We’d love to hear from you. Please feel free to comment and provide us with your insight in project. Join us in this revolutionary education era.</p>
+                    <ul class="list-unstyled contact-details">
+                        <li><i class="fa fa-envelope"></i><a target="_blank" href="mailto:hello@jsmart.me">hello@jsmart.me</a></li>
+                        <li><i class="fa fa-phone-square"></i>(619) 365-6981</li>
+                    </ul>
+                </div>
+            </div><!--//row-->
+            <div class="row text-center">
+                <div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+
+                    @using (Html.BeginForm("Index", "Start", FormMethod.Post, new { @class = "form", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        
+                          <div class="form-group name">
+                            <label class="sr-only" for="name">Name</label>
+
+                              @Html.TextBoxFor(m => m.Name, new { @type = "text", @placeholder = "Name:", @class = "form-control" })
+                              @Html.ValidationMessageFor(m => m.Name)
+
+
+                        </div><!--//form-group-->
+
+                        <div class="form-group email">
+                            <label class="sr-only" for="email">Email</label>
+                            @Html.TextBoxFor(m => m.Email, new { @type = "email", @placeholder = "Email:", @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Email)
+
+
+
+
+                        </div><!--//form-group-->
+
+                        <div class="form-group message">
+                            <label class="sr-only" for="message">Message</label>
+
+                            @Html.TextAreaFor(m => m.Message, new { @rows = "6", @placeholder = "Message:", @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Message)
+   </div><!--//form-group-->
+
+                        
+             
+                        <button type="submit" class="btn btn-lg btn-theme">Send Message</button>
+                        
+
+                  
+                    }
+
+
+
+                      
+                   <!--//form-->
+                </div><!--//contact-form-->
+            </div><!--//row-->
+            <div class="text-center">
+                <ul class="social-icons list-inline">
+                    <li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a target="_blank" href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+                </ul><!--//social-icons-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//contact-->
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container">
+            <small class="copyright pull-left">Copyright &copy; 2015 Mystro</small>
+            <ul class="links list-inline">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </footer><!--//footer-->
+    <!-- Javascript -->
+    <script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-inview/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="/assets/js/animations.js"></script>
+  
+        @Scripts.Render("~/bundles/jqueryval")
+    <!--<![endif]-->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-35559101-2', 'newsteineducation.cloudapp.net');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
+
+

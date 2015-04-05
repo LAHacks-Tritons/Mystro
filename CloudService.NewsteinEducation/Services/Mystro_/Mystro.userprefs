@@ -1,0 +1,10 @@
+﻿<Properties StartupItem="MystroService/MystroService.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../Documents/Mystro/Mystro/Mystro.iOS/MessagesViewController.cs" line="40" offsetX="652" offsetY="585" expression="AppDelegate.LoggedUser" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

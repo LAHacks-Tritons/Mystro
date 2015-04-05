@@ -1,0 +1,55 @@
+﻿@using Microsoft.Owin.Security
+@model WRole.Models.ExternalLoginViewModel
+
+@{
+    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+    if (loginProviders.Count() != 0)
+    {
+
+
+
+
+        string action = Model.Action;
+        string returnUrl = Model.ReturnUrl;
+        using (Html.BeginForm(action, "Account", new { ReturnUrl = returnUrl }))
+        {
+            @Html.AntiForgeryToken()
+            int x = 0;
+
+    
+            <div id="socialLoginList">
+            
+
+                    @foreach (AuthenticationDescription p in loginProviders)
+{
+    x++;
+
+    if (p.AuthenticationType == "Google")
+    {
+        <button title="Log in using your @p.Caption account" type="submit" name="provider" id="@p.AuthenticationType" value="@p.AuthenticationType" class="btn-google-plus-round"><i class="fa fa-google-plus"></i></button>
+
+    }
+    else if (p.AuthenticationType == "Twitter")
+    {
+
+        <button title="Log in using your @p.Caption account" type="submit" name="provider" id="@p.AuthenticationType" value="@p.AuthenticationType" class="btn-twitter-round"><i class="fa fa-twitter"></i></button>
+
+    }
+    else if (p.AuthenticationType == "Facebook")
+    {
+
+        <button title="Log in using your @p.Caption account" type="submit" name="provider" id="@p.AuthenticationType" value="@p.AuthenticationType" class="btn-facebook-round"><i class="fa fa-facebook"></i></button>
+
+
+    }
+                        
+                        if (x < loginProviders.Count()) { 
+                              <div class="space"></div>
+                        }
+
+                    }
+
+            </div>
+        }
+    }
+}
