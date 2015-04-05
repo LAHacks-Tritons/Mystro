@@ -16,15 +16,27 @@ namespace Mystro.iOS
 		}
 
 
+		private class CustomTheme : TrackBeamTheme
+		{
+			//Change the BaseTintColor
+			public override string PhoneBackgroundName
+			{
+				get
+				{
+					return "background_blur.jpg";
+				}
+			}
+
+
+		}
+
 
 		public override void ViewWillAppear (bool animated)
 		{
 			//ThemeManager.Current.Apply(View);
-			/*ThemeManager.Current.Apply (nameRegBox);
-			ThemeManager.Current.Apply (emailRegBox);
-			ThemeManager.Current.Apply(schoolRegBox);
-			ThemeManager.Current.Apply(passRegBox);
-			ThemeManager.Current.Apply(confirmpassRegBox);*/
+
+
+			ThemeManager.Register<CustomTheme>().Apply(View);
 			ThemeManager.Current.Apply(regButton);
 
 			base.ViewWillAppear (animated);

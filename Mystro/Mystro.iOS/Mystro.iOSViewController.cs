@@ -23,24 +23,40 @@ namespace Mystro.iOS
 			// Release any cached data, images, etc that aren't in use.
 		}
 
+
+		private class CustomTheme : TrackBeamTheme
+		{
+			//Change the BaseTintColor
+			public override string PhoneBackgroundName
+			{
+				get
+				{
+					return "background.jpg";
+				}
+			}
+		}
+
+
+
 		#region View lifecycle
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
 
-			EdgesForExtendedLayout = UIRectEdge.None;
+			EdgesForExtendedLayout = UIRectEdge.All;
 			// Perform any additional setup after loading the view, typically from a nib.
-		}
-
-		public override void ViewWillAppear (bool animated)
-		{
-			ThemeManager.Current.Apply(View);
+			ThemeManager.Register<CustomTheme>().Apply(View);
 			ThemeManager.Current.Apply (logInBtn);
 			ThemeManager.Current.Apply (stuRegisterBtn);
 			ThemeManager.Current.Apply(profRegisterBtn);
 			ThemeManager.Current.Apply(parentsRegisterBtn);
 
+		}
+
+		public override void ViewWillAppear (bool animated)
+		{
+			
 
 			base.ViewWillAppear (animated);
 		}

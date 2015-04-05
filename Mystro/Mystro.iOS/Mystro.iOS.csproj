@@ -139,5 +139,6 @@
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\LogoMystro.png" />
     <BundleResource Include="Resources\background.jpg" />
+    <BundleResource Include="Resources\background_blur.jpg" />
   </ItemGroup>
 </Project>
