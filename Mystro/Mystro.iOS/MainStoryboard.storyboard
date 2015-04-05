@@ -193,6 +193,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2rS-Dm-c30" kind="push" id="p8V-iS-sEE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,6 +232,101 @@
             </objects>
             <point key="canvasLocation" x="558" y="382"/>
         </scene>
+        <!--Dashboardview-->
+        <scene sceneID="NQ1-a3-pnO">
+            <objects>
+                <viewController id="2rS-Dm-c30" customClass="Dashboardview" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eHi-cU-sTG"/>
+                        <viewControllerLayoutGuide type="bottom" id="5d3-a0-9jr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="szR-dH-Mhj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="B9m-sC-bOg">
+                                <rect key="frame" x="164" y="143" width="140" height="141"/>
+                                <color key="backgroundColor" red="0.43137254901960786" green="0.78431372549019607" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="owj-m5-1oh"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Communicate with Parents">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aY-Gf-F8X">
+                                <rect key="frame" x="164" y="292" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.69411764705882351" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Schedule">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lge-kj-DB0">
+                                <rect key="frame" x="16" y="292" width="140" height="139"/>
+                                <color key="backgroundColor" red="0.0" green="0.60392156862745094" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="ANX-ye-ZIN"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Class Standing ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MY CHILD'S PROGRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNu-Zf-XT2">
+                                <rect key="frame" x="16" y="81" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-5H-KFg">
+                                <rect key="frame" x="16" y="143" width="140" height="141"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.22352941176470589" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="zbf-0X-T3N"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Professor Tips">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lge-kj-DB0" firstAttribute="top" secondItem="KuL-5H-KFg" secondAttribute="bottom" constant="8" symbolic="YES" id="86E-bB-dXT"/>
+                            <constraint firstItem="5aY-Gf-F8X" firstAttribute="trailing" secondItem="szR-dH-Mhj" secondAttribute="trailingMargin" id="8dg-49-0HC"/>
+                            <constraint firstItem="5d3-a0-9jr" firstAttribute="top" secondItem="5aY-Gf-F8X" secondAttribute="bottom" constant="136" id="Lv4-XW-waj"/>
+                            <constraint firstItem="5aY-Gf-F8X" firstAttribute="top" secondItem="B9m-sC-bOg" secondAttribute="bottom" constant="8" symbolic="YES" id="Ng4-tS-4WK"/>
+                            <constraint firstItem="B9m-sC-bOg" firstAttribute="leading" secondItem="5aY-Gf-F8X" secondAttribute="leading" id="QLl-TQ-jge"/>
+                            <constraint firstItem="lge-kj-DB0" firstAttribute="leading" secondItem="KuL-5H-KFg" secondAttribute="leading" id="Vbp-Hm-UwK"/>
+                            <constraint firstItem="lge-kj-DB0" firstAttribute="top" secondItem="5aY-Gf-F8X" secondAttribute="top" id="XT1-X1-P8T"/>
+                            <constraint firstItem="5d3-a0-9jr" firstAttribute="top" secondItem="lge-kj-DB0" secondAttribute="bottom" constant="137" id="eVt-NI-qBt"/>
+                            <constraint firstItem="5aY-Gf-F8X" firstAttribute="leading" secondItem="lge-kj-DB0" secondAttribute="trailing" constant="8" symbolic="YES" id="fzi-0S-lsp"/>
+                            <constraint firstItem="lge-kj-DB0" firstAttribute="leading" secondItem="szR-dH-Mhj" secondAttribute="leadingMargin" id="sqQ-A7-T4f"/>
+                            <constraint firstItem="B9m-sC-bOg" firstAttribute="top" secondItem="KuL-5H-KFg" secondAttribute="top" id="syP-p0-JwR"/>
+                            <constraint firstItem="B9m-sC-bOg" firstAttribute="trailing" secondItem="5aY-Gf-F8X" secondAttribute="trailing" id="un2-zH-Fab"/>
+                            <constraint firstItem="B9m-sC-bOg" firstAttribute="leading" secondItem="KuL-5H-KFg" secondAttribute="trailing" constant="8" symbolic="YES" id="w96-wX-tfQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="INR-uG-KMa"/>
+                    <connections>
+                        <outlet property="classStngBtn" destination="lge-kj-DB0" id="VaP-6P-Bj7"/>
+                        <outlet property="commBtn" destination="B9m-sC-bOg" id="lGp-tA-0XA"/>
+                        <outlet property="dashLabel" destination="tNu-Zf-XT2" id="VYj-XS-97v"/>
+                        <outlet property="profTipsBtn" destination="KuL-5H-KFg" id="NJw-YV-NiV"/>
+                        <outlet property="scheduleBtn" destination="5aY-Gf-F8X" id="Rcr-Qb-Ukq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnw-7r-jDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242" y="623"/>
+        </scene>
         <!--Log In-->
         <scene sceneID="BbX-jv-OUl">
             <objects>
@@ -241,11 +339,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fNb-aa-Dwr">
-                                <rect key="frame" x="16" y="76" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ic1-DD-x76">
                                 <rect key="frame" x="16" y="114" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -261,7 +354,15 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="NMD-Qq-KI2" kind="push" id="7Jl-PY-sAX"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fNb-aa-Dwr">
+                                <rect key="frame" x="16" y="76" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -280,7 +381,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDN-qX-grj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202" y="1003"/>
+            <point key="canvasLocation" x="202" y="1129"/>
+        </scene>
+        <!--Classes-->
+        <scene sceneID="Ejf-vm-1Sh">
+            <objects>
+                <tableViewController id="NMD-Qq-KI2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Classes" id="dJf-rI-oCY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cq5-iY-fd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576" y="1014"/>
         </scene>
         <!--entry-->
         <scene sceneID="99T-9v-AY3">

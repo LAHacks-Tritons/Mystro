@@ -74,3 +74,6 @@
 /Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/UIViewController-Phy-Gf-Yyw.nib
 /Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/SnI-u2-2un-view-Nsw-fm-e6q.nib
 /Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/UIViewController-SnI-u2-2un.nib
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/2rS-Dm-c30-view-szR-dH-Mhj.nib
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/UIViewController-2rS-Dm-c30.nib
+/Users/Atl/Documents/Mystro/Mystro/Mystro.iOS/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/UIViewController-NMD-Qq-KI2.nib

@@ -5,8 +5,17 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+
+
 namespace Mystro.iOS
 {
+
+	public static class AccountType
+	{
+		public static string type {get;set;}
+	}
+
+
 	public class Application
 	{
 		// This is the main entry point of the application.

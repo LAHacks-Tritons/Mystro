@@ -52,6 +52,21 @@ namespace Mystro.iOS
 			ThemeManager.Current.Apply(profRegisterBtn);
 			ThemeManager.Current.Apply(parentsRegisterBtn);
 
+			stuRegisterBtn.TouchUpInside += (object sender, EventArgs e) => 
+			{
+				AccountType.type = "student";
+			};
+
+			profRegisterBtn.TouchUpInside += (object sender, EventArgs e) => 
+			{
+				AccountType.type = "professor";
+			};
+
+			parentsRegisterBtn.TouchUpInside += (object sender, EventArgs e) => 
+			{
+				AccountType.type = "parent";
+			};
+
 		}
 
 		public override void ViewWillAppear (bool animated)
@@ -78,6 +93,8 @@ namespace Mystro.iOS
 		{
 			base.ViewDidDisappear (animated);
 		}
+
+
 
 		#endregion
 	}

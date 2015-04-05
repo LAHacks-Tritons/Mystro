@@ -1,15 +1,15 @@
-﻿<Properties StartupItem="Mystro.iOS/Mystro.iOS.csproj">
+﻿<Properties StartupItem="TrackBeamTheme-Sample-iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mystro.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Mystro.iOS/Main.cs">
     <Files>
-      <File FileName="Mystro.iOS/packages.config" Line="1" Column="1" />
-      <File FileName="Mystro.iOS/Mystro.iOSViewController.cs" Line="1" Column="1" />
-      <File FileName="Mystro.iOS/RegisterViewController.cs" Line="40" Column="30" />
-      <File FileName="Mystro.iOS/LogInViewController.cs" Line="4" Column="1" />
-      <File FileName="Mystro.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="Mystro.iOS/AppDelegate.cs" Line="51" Column="48" />
-      <File FileName="Mystro.iOS/Dashboardview.cs" Line="39" Column="56" />
-      <File FileName="Components/trackbeamtheme-1.5.0/samples/TrackBeamTheme-Sample-iOS/Views/iPhone/ElementThemeController.cs" Line="54" Column="6" />
+      <File FileName="../../../../Mystro.iOS/packages.config" Line="1" Column="1" />
+      <File FileName="../../../../Mystro.iOS/Mystro.iOSViewController.cs" Line="1" Column="1" />
+      <File FileName="../../../../Mystro.iOS/RegisterViewController.cs" Line="40" Column="30" />
+      <File FileName="../../../../Mystro.iOS/LogInViewController.cs" Line="4" Column="1" />
+      <File FileName="../../../../Mystro.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="../../../../Mystro.iOS/AppDelegate.cs" Line="51" Column="48" />
+      <File FileName="../../../../Mystro.iOS/Dashboardview.cs" Line="39" Column="56" />
+      <File FileName="Views/iPhone/ElementThemeController.cs" Line="54" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
