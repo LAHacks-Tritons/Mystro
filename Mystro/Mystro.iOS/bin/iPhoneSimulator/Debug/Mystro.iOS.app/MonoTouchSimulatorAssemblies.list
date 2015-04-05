@@ -3,5 +3,6 @@ System.dll
 System.Xml.dll
 System.Core.dll
 Mono.Dynamic.Interpreter.dll
+XCalendar.dll
 Xamarin.Themes.Core.dll
 Xamarin.Themes.TrackBeam.dll

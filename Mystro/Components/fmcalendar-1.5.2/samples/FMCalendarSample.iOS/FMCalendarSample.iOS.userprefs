@@ -1,0 +1,28 @@
+﻿<Properties StartupItem="FMCalendarSample.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Mystro.iOS/calendarView3.cs">
+    <Files>
+      <File FileName="../../../../Mystro.iOS/packages.config" Line="1" Column="1" />
+      <File FileName="../../../../Mystro.iOS/Mystro.iOSViewController.cs" Line="104" Column="1" />
+      <File FileName="../../../../Mystro.iOS/RegisterViewController.cs" Line="40" Column="30" />
+      <File FileName="../../../../Mystro.iOS/LogInViewController.cs" Line="4" Column="1" />
+      <File FileName="../../../../Mystro.iOS/Main.cs" Line="26" Column="1" />
+      <File FileName="../../../../Mystro.iOS/AppDelegate.cs" Line="51" Column="48" />
+      <File FileName="../../../../Mystro.iOS/Dashboardview.cs" Line="20" Column="30" />
+      <File FileName="../../../trackbeamtheme-1.5.0/samples/TrackBeamTheme-Sample-iOS/Views/iPhone/ElementThemeController.cs" Line="17" Column="52" />
+      <File FileName="FMCalendarViewController.cs" Line="9" Column="3" />
+      <File FileName="../../../../Mystro.iOS/calendarView3.cs" Line="64" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="FMCalendarSample.iOS" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

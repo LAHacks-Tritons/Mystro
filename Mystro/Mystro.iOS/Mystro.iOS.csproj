@@ -97,6 +97,12 @@
     <Reference Include="Xamarin.Themes.Core">
       <HintPath>..\packages\Xamarin.Themes.Core.1.0.0.1\lib\Xamarin.iOS10\Xamarin.Themes.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Factorymind.Components-Unified">
+      <HintPath>..\Components\fmcalendar-1.5.2\lib\ios-unified\Factorymind.Components-Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="XCalendar">
+      <HintPath>..\Components\XCalendar-1.1\lib\ios-unified\XCalendar.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
@@ -130,11 +136,31 @@
     <Compile Include="Dashboardview.designer.cs">
       <DependentUpon>Dashboardview.cs</DependentUpon>
     </Compile>
+    <Compile Include="calendarView3.cs" />
+    <Compile Include="calendarView3.designer.cs">
+      <DependentUpon>calendarView3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calendarView.cs" />
+    <Compile Include="calendarView.designer.cs">
+      <DependentUpon>calendarView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calendarUI.cs" />
+    <Compile Include="calendarUI.designer.cs">
+      <DependentUpon>calendarUI.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <XamarinComponentReference Include="trackbeamtheme">
       <Version>1.5.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="fmcalendar">
+      <Version>1.5.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="XCalendar">
+      <Version>1.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
@@ -144,5 +170,11 @@
     <BundleResource Include="Resources\LogoMystro.png" />
     <BundleResource Include="Resources\background.jpg" />
     <BundleResource Include="Resources\background_blur.jpg" />
+    <BundleResource Include="Resources\class_tasks.png" />
+    <BundleResource Include="Resources\grade_progress.png" />
+    <BundleResource Include="Resources\growth.png" />
+    <BundleResource Include="Resources\pending_tasks.png" />
+    <BundleResource Include="Resources\students.png" />
+    <BundleResource Include="Resources\students_table.png" />
   </ItemGroup>
 </Project>

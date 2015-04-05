@@ -114,6 +114,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HJQ-N3-VOA"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="logInBtn" destination="dIH-jm-mxj" id="0wc-x2-VpS"/>
@@ -276,6 +277,9 @@
                                 <state key="normal" title="Class Standing ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="7xn-Q0-g9E" kind="push" id="gUB-c5-Fb6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MY CHILD'S PROGRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNu-Zf-XT2">
                                 <rect key="frame" x="16" y="81" width="288" height="21"/>
@@ -393,6 +397,39 @@
             </objects>
             <point key="canvasLocation" x="576" y="1014"/>
         </scene>
+        <!--Class Standing-->
+        <scene sceneID="mo4-5k-pg4">
+            <objects>
+                <viewController id="7xn-Q0-g9E" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ero-wA-MDR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xvj-f2-rFM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QtM-bF-YXK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="growth.png" translatesAutoresizingMaskIntoConstraints="NO" id="gvY-l0-Scf">
+                                <rect key="frame" x="0.0" y="64" width="320" height="135"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="students.png" translatesAutoresizingMaskIntoConstraints="NO" id="1AM-Tf-nv9">
+                                <rect key="frame" x="0.0" y="207" width="320" height="135"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="students_table.png" translatesAutoresizingMaskIntoConstraints="NO" id="YbB-29-Hu1">
+                                <rect key="frame" x="0.0" y="493" width="320" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="class_tasks.png" translatesAutoresizingMaskIntoConstraints="NO" id="GVa-yW-ZcS">
+                                <rect key="frame" x="0.0" y="350" width="320" height="135"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Class Standing" id="ml5-4n-450"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MN3-z4-ye3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="1322"/>
+        </scene>
         <!--entry-->
         <scene sceneID="99T-9v-AY3">
             <objects>
@@ -409,10 +446,34 @@
             </objects>
             <point key="canvasLocation" x="-226" y="358"/>
         </scene>
+        <!--Calendar View-->
+        <scene sceneID="nQe-pQ-h9d">
+            <objects>
+                <viewController id="RQe-fs-R2I" customClass="calendarView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hSm-4N-MaM"/>
+                        <viewControllerLayoutGuide type="bottom" id="MO3-eU-GGM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EKC-Gq-fZe" customClass="calendarUI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="28v-M9-5aW"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmR-I9-3bq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="1676"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LogoMystro.png" width="303" height="106"/>
+        <image name="class_tasks.png" width="394" height="128"/>
+        <image name="growth.png" width="392" height="145"/>
         <image name="logoBig.png" width="1000" height="1000"/>
+        <image name="students.png" width="394" height="143"/>
+        <image name="students_table.png" width="814" height="337"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

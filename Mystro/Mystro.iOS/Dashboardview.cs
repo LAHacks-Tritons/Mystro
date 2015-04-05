@@ -29,6 +29,17 @@ namespace Mystro.iOS
 
 		}
 
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+
+			scheduleBtn.TouchUpInside += (object sender, EventArgs e) => {
+
+				NavigationController.PushViewController(new calendarView(), true);
+
+			};
+		}
+
 
 		public override void ViewWillAppear (bool animated)
 		{
