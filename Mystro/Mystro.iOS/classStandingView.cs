@@ -9,9 +9,9 @@ using UIKit;
 
 namespace Mystro.iOS
 {
-	public partial class RegisterViewController : UIViewController
+	public partial class classStandingView : UIViewController
 	{
-		public RegisterViewController (IntPtr handle) : base (handle)
+		public classStandingView (IntPtr handle) : base (handle)
 		{
 		}
 
@@ -28,19 +28,23 @@ namespace Mystro.iOS
 			}
 
 
-		}
 
+		}
 
 		public override void ViewWillAppear (bool animated)
 		{
 			//ThemeManager.Current.Apply(View);
+			/*ThemeManager.Current.Apply (nameRegBox);
+			ThemeManager.Current.Apply (emailRegBox);
+			ThemeManager.Current.Apply(schoolRegBox);
+			ThemeManager.Current.Apply(passRegBox);
+			ThemeManager.Current.Apply(confirmpassRegBox);*/
 			NavigationController.NavigationBarHidden = false;
 
-
 			ThemeManager.Register<CustomTheme>().Apply(View);
-			ThemeManager.Current.Apply(regButton);
 
 			base.ViewWillAppear (animated);
 		}
+
 	}
 }

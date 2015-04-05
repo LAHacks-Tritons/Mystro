@@ -39,6 +39,7 @@ namespace Mystro.iOS
 			ThemeManager.Current.Apply(schoolRegBox);
 			ThemeManager.Current.Apply(passRegBox);
 			ThemeManager.Current.Apply(confirmpassRegBox);*/
+			NavigationController.NavigationBarHidden = false;
 
 			ThemeManager.Register<CustomTheme>().Apply(View);
 			ThemeManager.Current.Apply(logInButton);

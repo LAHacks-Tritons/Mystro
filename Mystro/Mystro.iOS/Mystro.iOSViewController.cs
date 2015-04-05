@@ -67,7 +67,7 @@ namespace Mystro.iOS
 				AccountType.type = "parent";
 			};
 
-			//NavigationController.NavigationBarHidden = true;
+			NavigationController.NavigationBarHidden = true;
 
 
 		}
@@ -75,6 +75,7 @@ namespace Mystro.iOS
 		public override void ViewWillAppear (bool animated)
 		{
 			
+			NavigationController.NavigationBarHidden = true;
 
 			base.ViewWillAppear (animated);
 		}

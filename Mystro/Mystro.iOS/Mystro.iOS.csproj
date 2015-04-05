@@ -148,6 +148,10 @@
     <Compile Include="calendarUI.designer.cs">
       <DependentUpon>calendarUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="classStandingView.cs" />
+    <Compile Include="classStandingView.designer.cs">
+      <DependentUpon>classStandingView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

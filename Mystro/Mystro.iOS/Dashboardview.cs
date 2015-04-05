@@ -33,11 +33,25 @@ namespace Mystro.iOS
 		{
 			base.ViewDidLoad ();
 
-			scheduleBtn.TouchUpInside += (object sender, EventArgs e) => {
+			classStngBtn.UserInteractionEnabled = true;
 
-				NavigationController.PushViewController(new calendarView(), true);
+			if (AccountType.type != "parent") {
+				scheduleBtn.TouchUpInside += (object sender, EventArgs e) => {
 
-			};
+					NavigationController.PushViewController (new calendarView (), true);
+
+				};
+			}
+
+			if (AccountType.type == "parent") {
+				scheduleBtn.TouchUpInside += (object sender, EventArgs e) => {
+
+					//NavigationController.PushViewController (new classStandingView (), true);
+
+				};
+				classStngBtn.UserInteractionEnabled = false;
+
+			}
 		}
 
 
